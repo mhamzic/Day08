@@ -1,13 +1,14 @@
 // Only change code below this line
 
-function convertToInt(str) {
+function convertToInt(str, radix) {
   var str;
-  return parseInt(str);
+  var radix = 16;
+  return parseInt(str, radix);
 }
 
-console.log(parseInt("BA", 16));
-console.log(parseInt("F1", 16));
-console.log(parseInt("JeffBezos", 16));
+console.log(convertToInt("BA"));
+console.log(convertToInt("F1"));
+console.log(convertToInt("JeffBezos"));
 
 // Only change code above this line
 
